@@ -2,36 +2,31 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<div class="method-block">
+<div class="awards-block">
   <div class="content">
     {
       () => {
         let cols = [
           [
-            "uil:bolt-alt",
-            "Speed",
-            "How quickly do users want and need the solutions to be, and accordingly what tools will ensure high levels of speed.",
+            "mdi:certificate",
+            "Applied AI Engineering Certificate",
+            "CodePath x Anthropic • May 2026",
           ],
           [
-            "mdi:waves",
-            "Efficiency",
-            "Making sure not to waste resources, time and/or effort, so users can get the most out of the final product.",
+            "mdi:trophy",
+            "Washington State Gold Medalist, ICPC PACNW",
+            "University of Washington Tacoma • Nov. 2024",
           ],
           [
-            "mdi:gavel",
-            "Ease-of-use",
-            "The solution needs to be easy and pleasant to use. Users should actually enjoy the solution, it should enable user to do more, and should fit into the users workflow like a glove.",
-          ],
-          [
-            "mdi:history",
-            "Impact",
-            "The solution should leave an impact, an impact large enough that users understand the what, where, why, and how's clearly.",
+            "mdi:trophy",
+            "Dean's List",
+            "Pacific Lutheran University • All Semesters",
           ],
         ];
         return cols.map((col) => {
           let [icon, title, description] = col;
           return (
-            <div class="method">
+            <div class="award">
               <div class="icon-container">
                 <Icon name={icon} />
               </div>
@@ -48,7 +43,7 @@ import { Icon } from "astro-icon/components";
 <style>
   @reference "../styles/global.css";
 
-  .method-block {
+  .awards-block {
     @apply bg-gray-900 sm:rounded-3xl;
     @apply container max-w-[85ch];
     @apply px-2 py-10 lg:px-10;
@@ -58,7 +53,7 @@ import { Icon } from "astro-icon/components";
     }
   }
 
-  .method {
+  .award {
     @apply flex flex-col items-center px-0 sm:px-2 lg:px-6;
   }
 

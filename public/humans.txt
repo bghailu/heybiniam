@@ -1,12 +1,10 @@
 /* DEVELOPMENT */
-  Okiki Ojo: Development, Design, Concept, Research, Art Direction, SEO
-  Contact: hey@okikio.dev
-  Site: https://okikio.dev
-  Twitter: @okikio_dev
-  From: Ontario, Canada
+  Biniam Hailu: Development, Design
+  Contact: binighailu@gmail.com
+  Site: https://heybiniam.com
+  From: Seattle, WA
 
 /* SITE */
-  Last update: 2026/04/25
   Language: English
   Technologies: astro, tailwind css, vite, cloudinary, typescript
   IDE: VS Code

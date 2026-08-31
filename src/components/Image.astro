@@ -2,7 +2,7 @@
 import { CldImage } from "astro-cloudinary";
 
 const {
-  src = "cloudinary/okiki-ojo",
+  src = "cloudinary/profile",
   alt = "An image of a ...",
   loading = "lazy",
   class: className,
@@ -15,7 +15,7 @@ let cloudinaryTest = /^cloudinary\//.test(src);
 let fetchTest = /\/fetch\//.test(src);
 
 let origin =
-  `https://res.cloudinary.com/okikio-assets/image/` +
+  `https://res.cloudinary.com/${import.meta.env.PUBLIC_CLOUDINARY_CLOUD_NAME}/image/` +
   (fetchTest ? "fetch/" : "upload/");
 let urlParse = (filters = "w_auto") =>
   cloudinaryTest

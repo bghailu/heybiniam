@@ -5,12 +5,14 @@ import Image from "./Image.astro";
 
 import { slug as slugger } from "../utils/slug";
 
-let src = "cloudinary/okikio/okiki-ojo";
+// Placeholder Cloudinary public ID — upload a real headshot under this ID
+// (or change `src` to whatever public ID you use) once you have one.
+let src = "cloudinary/profile";
 let cloudinaryTest = /^cloudinary\//.test(src);
 let fetchTest = /\/fetch\//.test(src);
 
 let origin =
-  `https://res.cloudinary.com/okikio-assets/image/` +
+  `https://res.cloudinary.com/${import.meta.env.PUBLIC_CLOUDINARY_CLOUD_NAME}/image/` +
   (fetchTest ? "fetch/" : "upload/");
 let urlParse = (filters = "w_auto") =>
   cloudinaryTest
@@ -35,15 +37,15 @@ let sizes = `(max-width: 600px) 250px, (max-width: 1024px) 450px`;
     <div class="layout">
       <div class="z-10" data-perspective="header">
         <h1>
-          Hello, I am <strong class="text-primary" aria-label="Okiki Ojo"
-            >Okiki.</strong
+          hey, i'm <strong class="text-primary" aria-label="Biniam Hailu"
+            >biniam.</strong
           >
         </h1>
-        <h2>Web Developer - Open Source Steward - Curious Explorer</h2>
+        <h2> Applied AI Engineer - Seattle, WA</h2>
       </div>
       <Image
         src={src}
-        alt="A black and white profile photo of Okiki Ojo, smiling, looking straight forward, behind a brick wall backdrop. He is wearing glasses, a black shirt and jacket, plus some wireless headphones, which are hanging around on his neck."
+        alt="Placeholder headshot for Biniam Hailu — replace with a real photo."
         width={450}
         height={350}
         data-nosnippet
@@ -62,10 +64,9 @@ let sizes = `(max-width: 600px) 250px, (max-width: 1024px) 450px`;
         {
           () => {
             let links = {
-              LinkedIn: ["In", "https://www.linkedin.com/in/okikio"],
-              Twitter: ["Tw", "https://twitter.com/okikio_dev"],
-              GitHub: ["Git", "https://github.com/okikio"],
-              Email: ["@", "mailto:hey@okikio.dev"],
+              LinkedIn: ["In", "https://www.linkedin.com/in/bghailu"],
+              GitHub: ["Git", "https://github.com/bghailu"],
+              Email: ["@", "mailto:binighailu@gmail.com"],
             };
 
             return Object.keys(links).map((name) => {
@@ -206,7 +207,7 @@ let sizes = `(max-width: 600px) 250px, (max-width: 1024px) 450px`;
       }
 
       .icon-container {
-        @apply bg-primary text-black relative;
+        @apply bg-primary text-white relative;
         @apply p-4 inline-block rounded-full;
 
         &::after {

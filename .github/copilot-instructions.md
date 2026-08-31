@@ -17,7 +17,7 @@ When a more specific file applies, follow that file for the local task and use t
 
 ## Project overview
 
-This repository is Okiki Ojo's Astro-based portfolio site.
+This repository is Biniam Hailu's Astro-based portfolio site.
 It is a content-forward web application built with Astro 5, Tailwind CSS, and TypeScript-flavored `.astro` components.
 
 The most important entry points are:

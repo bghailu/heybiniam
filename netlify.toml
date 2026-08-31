@@ -1,0 +1,31 @@
+# Netlify build + hosting config.
+# Mirrors vercel.json so headers/redirects stay in parity across platforms.
+# The Astro adapter is chosen automatically by astro-auto-adapter when
+# NETLIFY=true is present in the build environment (@astrojs/netlify).
+
+[build]
+  command = "corepack pnpm build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"
+  # Explicit adapter selection (auto-detection also works on Netlify).
+  ASTRO_ADAPTER_MODE = "netlify"
+
+# Optional proxy kept for parity with the old vercel.json rewrite.
+# Components currently build res.cloudinary.com URLs directly, so this
+# is only a fallback for any legacy /images/* links.
+[[redirects]]
+  from = "/images/*"
+  to = "https://res.cloudinary.com/ch1dfnfp/image/:splat"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), usb=(), sync-xhr=(self), camera=()"
+    Content-Security-Policy = "default-src 'self'; font-src 'self' data:; style-src 'self' 'unsafe-inline'; img-src 'self' https://res.cloudinary.com https://heybiniam.com data:; script-src 'self' https://www.googletagmanager.com 'unsafe-inline'; connect-src 'self' https://www.google-analytics.com; block-all-mixed-content; upgrade-insecure-requests; base-uri 'self'; object-src 'none'; worker-src 'self'; manifest-src 'self'; media-src 'self' https://res.cloudinary.com https://heybiniam.com; form-action 'self'; frame-ancestors 'self' https:;"

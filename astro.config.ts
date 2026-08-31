@@ -7,7 +7,7 @@ import { defineConfig, fontProviders } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://okikio.dev",
+  site: "https://heybiniam.com",
   output: output(),
   adapter: await adapter(),
   trailingSlash: "ignore",

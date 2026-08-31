@@ -94,7 +94,7 @@ a {
 
 #skip-main {
   @apply border-2 border-primary;
-  @apply text-black bg-primary;
+  @apply text-white bg-primary;
   transform: translateX(-50%);
 
   @apply absolute top-10 left-0 rounded-lg text-center mt-10 text-lg py-2 w-full;

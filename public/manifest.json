@@ -1,11 +1,11 @@
 {
-  "name": "Okiki Ojo",
-  "short_name": "Okiki Ojo",
+  "name": "Biniam Hailu",
+  "short_name": "Biniam Hailu",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#ffff00",
+  "theme_color": "#000000",
   "background_color": "#000000",
-  "description": "The portfolio of Okiki Ojo. It contains some of his amazing projects, and a little about him, etc... (It's very weird to describe myself in the 3rd person.)",
+  "description": "The portfolio of Biniam Hailu. It contains some of his projects, and a little about him.",
   "icons": [
     {
       "src": "/favicon/android-chrome-192x192.png",
@@ -17,18 +17,6 @@
       "src": "/favicon/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "/favicon/maskable_icon_x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/favicon/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
       "purpose": "any"
     }
   ],

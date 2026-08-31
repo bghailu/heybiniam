@@ -1,22 +1,19 @@
 {
-  "name": "@okikio/portfolio",
+  "name": "biniam-portfolio",
   "version": "0.0.1",
   "type": "module",
   "private": true,
   "author": {
-    "name": "Okiki Ojo",
-    "email": "hey@okikio.dev",
-    "url": "https://okikio.dev"
+    "name": "Biniam Hailu",
+    "email": "binighailu@gmail.com",
+    "url": "https://heybiniam.com"
   },
-  "copyright": "Okiki Ojo",
-  "homepage": "https://okikio.dev/",
-  "github": "https://github.com/okikio/okikio/",
+  "copyright": "Biniam Hailu",
+  "homepage": "https://heybiniam.com",
+  "github": "https://github.com/bghailu",
   "license": "AGPL-3.0-only",
   "engines": {
     "node": ">=24"
-  },
-  "bugs": {
-    "url": "https://github.com/okikio/okikio/issues"
   },
   "scripts": {
     "dev": "astro dev",
@@ -26,7 +23,7 @@
   },
   "devDependencies": {
     "@astrojs/cloudflare": "^13.5.1",
-    "@astrojs/mdx": "^5.0.6",
+    "@astrojs/mdx": "^7.0.8",
     "@astrojs/netlify": "^7.0.13",
     "@astrojs/node": "^11.0.2",
     "@astrojs/rss": "^4.0.19",

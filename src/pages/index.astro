@@ -1,7 +1,7 @@
 ---
 import HomepageLayout from "../layouts/HomepageLayout.astro";
 import HeroBanner from "../components/HeroBanner.astro";
-import MethodBlock from "../components/MethodBlock.astro";
+import AwardsBlock from "../components/AwardsBlock.astro";
 import Card from "../components/Card.astro";
 import Anchor from "../components/Anchor.astro";
 
@@ -19,94 +19,100 @@ let sizes = `(max-width: 300px) 270px, (max-width: 350px) 320px, (max-width: 450
     <div class="content">
       <h2 id="about">About.</h2>
       <p>
-        Hey, I am Okiki Ojo (pronounced O-key-key O-jo), previously worked as
-        a Software Engineer at <Anchor href="https://vercel.com/">Vercel</Anchor
-        >, constantly working on projects with impact. Graduated with a Bachelor
-        of Engineering in Software Engineering at <Anchor
-          href="https://ontariotechu.ca/">Ontario Tech University</Anchor
-        > (formerly University of Ontario Institute of Technology, UOIT). I've always been fascinated by why things worked they did and how things worked the way they did. Initially, I started web development out of
-        curiosity, eventually it became a hobby, and after many hobby projects (e.g.
-        Open Source projects; read more in <Anchor href="#projects"
-          >featured projects</Anchor
-        >), I thought it would be cool to make a website to display some of my
-        works, thus here we are.
-
-        <br />
-        <br />
-
-        I have a passion for design and development. I love that feeling when
-        things just fit like a glove. I'm driven to create things that function
-        with a shine you can't resist. I'm always eager to take on challenges
-        and aim to exceed in all tasks I take on. I strongly belive in simple, reliable and 
-        effective solutions. That's why I love building primitives, they are the building blocks of everything else, 
-        and when done right, they can be used to build anything you can imagine. 
+        Hey, I'm Biniam Hailu, an AI Engineer and summa cum laude graduate of 
+        Pacific Lutheran University, where I earned degrees in Computer Science and Applied Mathematics.
+        
+        When I'm not coding, you'll find me watching movies, losing tennis matches 
+        I swear I almost won, or out with friends.
       </p>
+      <p>
+      I build agentic systems, RAG pipelines, and fine-tuned LLMs that actually hold up in production, 
+        sitting on solid backend and cloud foundations. I like new tools, hard problems, and the quiet
+         satisfaction of turning a half-formed idea into something people can use.
+      </p>
+      <p>
+      When I'm not coding, you'll find me watching movies, losing tennis matches 
+        I swear I almost won, or out with friends.
+      </p>
+
+      <p>
+        Welcome to my corner of the web.
+
+      </p>
+
+
     </div>
 
     <div class="content">
       <h3 class="nav-item" id="experience">Experience</h3>
-      <p>
-        Open source development (<span
-          class="fine:underline fine:decoration-dotted"
-          title="Technically OSS should be OSSD as in Open Source Software Development, but tomato, tomahato (intentional)"
-          >OSS</span
-        >), has taught me quite a lot, for one it's made me truly appreciate good
-        governance, and even better coding/documentation practices. During my
-        adventures in OSS, I worked on many projects ranging from <Anchor
-          href="https://native.okikio.dev/animate">@okikio/animate</Anchor
-        > to <Anchor href="https://bundlejs.com">bundlejs.com</Anchor> (learn more
-        at <Anchor href="#projects">featured projects</Anchor>), wrote multiple <Anchor
-          href="https://blog.okikio.dev/">blog posts</Anchor
-        > and <Anchor
-          href="https://css-tricks.com/how-i-used-the-waapi-to-build-an-animation-library/"
-          >articles</Anchor
-        >, I even earned a position as a <Anchor
-          href="https://twitter.com/astrodotbuild/status/1486195466085695488?s=20&t=P7aMtK25Hg0DlWpIF3PC7w"
-          >maintainer</Anchor
-        > on the <Anchor href="https://astro.build">astro.build</Anchor> project.
-        All the experience I've gained from the various OSS projects and communities
-        I've had the pleasure to be a part of, have helped me grow as a developer
-        and a person. I've learned the value of collaboration, the importance of
-        clear communication, how to approach problems with a critical eye, and the
-        joy of sharing knowledge with others. I also had the pleasure of working
-        with some amazing people, who have taught me so much.
-      </p>
+      <ul class="not-prose flex flex-col gap-6 pl-0 list-none">
+        {
+          () => {
+            let experience = [
+              {
+                company: "Pacific Lutheran University",
+                role: "Data Structures Teaching Assistant",
+                period: "Sep. 2025 -- Present",
+              },
+              {
+                company: "churchme",
+                role: "Software Engineer Intern",
+                period: "May 2025 -- Aug. 2025",
+              },
+              {
+                company: "Techfinity Solutions",
+                role: "Software Developer Intern",
+                period: "June 2024 -- Aug. 2024",
+              },
+              {
+                company: "Pacific Lutheran University",
+                role: "Student Technician",
+                period: "Sep. 2023 -- Present",
+              },
+            ];
+
+            return experience.map(({ company, role, period }) => (
+              <li>
+                <strong class="text-primary">{company}</strong> — {role}
+                <span class="block text-sm opacity-70">{period}</span>
+              </li>
+            ));
+          }
+        }
+      </ul>
     </div>
 
     <div class="content">
       <h3 class="nav-item" id="skills">Skills</h3>
       <p>
-        As part of my odyssey through the OSS community, I gained experience in
-        many technologies, Docker, Kubernetes, Tailscale, Astro, Javascript,
-        Typescript, CSS/SASS, HTML, Pug, Node.js, Deno, Oak.js, Hono, Vercel AI
-        SDK, Cloudflare Workers, Java, Kotlin, Better Auth, Auth.js, Python,
-        Tensorflow, Tailwind CSS, Fastify, React, Next.js, Solid.js, Svelte, C#,
-        C/C++, and many more… In general I've found learning a technology with a
-        specific need in mind does wonders for deeply understanding techniques,
-        technologies and concepts. Thus I prefer to put skills to the test, real
-        learning only occurs when one overcomes adversity. With the large
-        repertoire of tools and skills I've built up over the years, I'm now
-        able to rather quickly onboard on projects and start finding solutions
-        to problems that drive momentum forward.
+        <strong class="text-primary">AI &amp; AI-Native Tooling:</strong> RAG,
+        Agentic &amp; Multi-Agent Systems (LangGraph, Pydantic-AI), LLM
+        Fine-Tuning (QLoRA, Unsloth), vLLM, FAISS, pgvector, Tool/Function
+        Calling, Hallucination Guardrails, Claude Code.
+      </p>
+      <p>
+        <strong class="text-primary">Languages &amp; Frameworks:</strong> Python,
+        TypeScript, Go, Java, Next.js, React, Node.js, FastAPI, Flask, Gin, Pandas.
+      </p>
+      <p>
+        <strong class="text-primary">Cloud, Infrastructure &amp; Data:</strong> AWS
+        (EC2, Lambda, DynamoDB, S3, CDK), Azure (App Service, Entra ID), Firebase,
+        Docker, PostgreSQL, MongoDB, Redis, REST APIs, CI/CD, Git, GitHub.
       </p>
     </div>
 
     <div class="content">
-      <h3 id="method">Method</h3>
+      <h3 id="awards">Awards</h3>
       <p>
-        When developing projects and solutions I first aim to understand the
-        needs and goals of the project, I then determine the best approach to
-        build a solution and what type of solution drives the most impact. I'm a
-        strong proponent of the <Anchor href="https://linear.app/method"
-          >Linear Method</Anchor
-        >, which is all about consistent well scoped delivery with the goal of
-        keeping up momentum til the project is delivered. In total, there are
-        four parts to my method, speed, efficiency, ease-of-use, and impact.
+        A couple of highlights so far: completing the Applied AI Engineering
+        Certificate through CodePath x Anthropic, winning gold at the ICPC
+        Pacific Northwest regional, and landing on Pacific Lutheran
+        University's Dean's List every semester.
       </p>
     </div>
 
     <div class="py-6">
-      <MethodBlock />
+      <AwardsBlock />
     </div>
   </section>
 
@@ -114,139 +120,46 @@ let sizes = `(max-width: 300px) 270px, (max-width: 350px) 320px, (max-width: 450
     <div class="content">
       <h2 id="projects">Featured Projects.</h2>
     </div>
-    <div class="container px-5 max-w-[105ch]">
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="container px-5 max-w-3xl mx-auto">
+      <div class="grid sm:grid-cols-2 gap-6">
         {
           () => {
-            let externalIcon = `<svg viewBox="0 0 24 24" class="astro-6H36LA55 inline-block w-[1em] h-[1em]" data-icon="fluent:arrow-up-right-24-filled"><path fill="yellow" d="M11 3a1 1 0 1 0 0 2h6.586L3.293 19.293a1 1 0 1 0 1.414 1.414L19 6.414V13a1 1 0 1 0 2 0V4a1 1 0 0 0-1-1h-9z"></path></svg>`;
             let projects = {
-              bundlejs: {
+              "Deal Hunter": {
+                image: { blank: true },
+                description:
+                  "Autonomous multi-agent workflow (LangGraph, Pydantic-AI) that ingests live listings, predicts fair market value with a fine-tuned Qwen3-8B model served on vLLM, and surfaces mispriced bargains in real time.",
+                link: "https://github.com/bghailu",
+              },
+
+              "Tatari AI": {
                 image: {
-                  src: "cloudinary/okikio/bundlejs.netlify.app_",
-                  alt: "The banner for 'bundlejs.com'. It has a blue box with the letter 'b' inside it, the blue box is the logo, offset by a bit, with the text 'bundlejs' in the center.",
+                  src: "cloudinary/tatari",
+                  alt: "Screenshot of the Tatari AI academic advisor.",
                 },
                 description:
-                  "An online tool to quickly and easily bundle, minify, and compress your ts, js, jsx and npm projects, while viewing the file size of the final bundle.",
-                link: "https://bundlejs.com",
+                  "Full-stack AI academic advisor (Next.js, FastAPI, GPT-4.1) with a pgvector-backed agentic memory system that analyzes academic records and delivers personalized, RAG-grounded recommendations.",
+                link: "https://github.com/bghailu",
               },
 
-              inthistweet: {
+              RentLink: {
                 image: {
-                  src: "cloudinary/okikio/inthistweet.app_",
-                  alt: "The banner for 'inthistweet.app'. It has the In This Tweet logo offset left by a small amount, with the text 'inthistweet.app' in the center.",
+                  src: "cloudinary/rentlink",
+                  alt: "Screenshot of the RentLink web app.",
                 },
                 description:
-                  "✨ Futuristic ✨ twitter image, gif and video downloader. Enter a Tweet URL, click search, and download the image/videos in it.",
-                link: "https://inthistweet.app",
+                  "A university exclusive platform on AWS EC2 designed to simplify student subleases.",
+                link: "https://www.rentlink.space/",
               },
 
-              jabodent: {
+              "Safe Bites": {
                 image: {
-                  src: "cloudinary/okikio/jabodent.com_",
-                  alt: "The banner for 'jabodent.com'. It has the Jabodent logo offset left by a small amount, with the text 'Jabodent' in the center.",
-                },
-                description: "The website for Jabodent Offshore Consultants.",
-                link: "https://jabodent.com",
-              },
-
-              reindeere: {
-                image: {
-                  src: "cloudinary/okikio/reindeere.ca_",
-                  alt: "The banner for 'reindeere.ca'. It has a cartoonified image of a reindeer offset left by a small amount, with the text 'Reindeere' in the center (note, in the banner reindeere has an extra 'e' on the end).",
+                  src: "cloudinary/safebites",
+                  alt: "Screenshot of the Safe Bites Android app.",
                 },
                 description:
-                  "The website for a startup focused on local delivery using robots.",
-                link: "https://reindeere.ca",
-              },
-
-              joesphojo: {
-                image: {
-                  src: "cloudinary/okikio/josephojo.com_",
-                  alt: "The banner for 'josephojo.com'. It has an image of Joseph Ojo, smiling staring straight forward. He is wearing a dark gray suit with glasses.",
-                },
-                description: "An engineering portfolio site for a Joseph Ojo.",
-                link: "https://josephojo.com/",
-              },
-
-              transferables: {
-                image: {
-                  src: "cloudinary/okikio/transferables",
-                  alt: "The banner for 'transferables'. It has the text 'transferables' in the center, with 'transfer' being blue, the rest of the text being white and the background being black.",
-                },
-                description:
-                  "Utility library that lists out all transferable objects that can be transfered between Workers and the main thread",
-                link: "https://github.com/okikio/transferables",
-              },
-
-              "spring-easing": {
-                image: {
-                  src: "cloudinary/okikio/spring-easing",
-                  alt: "The banner for 'spring-easing'. It just has the text 'spring-easing' in the center, with a blue dash separating the words 'spring' and 'easing', the rest of the text being white and the background being black.",
-                },
-                description:
-                  "Quick and easy spring animation. Works with other animation libraries (gsap, animejs, framer motion, motion one, @okikio/animate, etc...) or the Web Animation API (WAAPI).",
-                link: "https://spring-easing.okikio.dev",
-              },
-
-              "@okikio/animate": {
-                image: {
-                  src: "cloudinary/okikio/animate",
-                  alt: "The banner for '@okikio/animate'. It just has the text '@okikio/animate' in the center, with '@' being blue, the rest of the text being white and the background being black.",
-                },
-                description:
-                  "An animation library that utilizes the Web Animation API (WAAPI) to deliver fluid animations at a semi-small size.",
-                link: "https://native.okikio.dev/animate",
-              },
-
-              "@okikio/native": {
-                image: {
-                  src: "cloudinary/okikio/native",
-                  alt: "The banner for '@okikio/native'. It just has the text '@okikio/native' in the center, with '@' being blue, the rest of the text being white and the background being black.",
-                },
-                description:
-                  "A js framework for creating coordinated web experience through composable services.",
-                link: "https://native.okikio.dev/native",
-              },
-
-              "@okikio/sharedworker": {
-                image: {
-                  src: "cloudinary/okikio/sharedworker",
-                  alt: "The banner for '@okikio/sharedworker'. It just has the text '@okikio/sharedworker' in the center, with '@' being blue, the rest of the text being white and the background being black.",
-                },
-                description:
-                  "A small mostly spec. compliant polyfill/ponyfill for SharedWorkers, it acts as a drop in replacement for normal Workers.",
-                link: "https://sharedworker.okikio.dev",
-              },
-
-              "Codepen Projects": {
-                image: {
-                  src: "cloudinary/okikio/Codepen",
-                  alt: "A banner for 'Codepen'. It has the Codepen logo offset left by a small amount, with the text 'Codepen' in the center. The text is white and the background is black.",
-                },
-                description:
-                  "A set of small snippets, mini-projects and experiments, that I created on Codepen.",
-                link: "https://codepen.com/okikio",
-              },
-
-              "Legacy Projects": {
-                image: {
-                  src: "cloudinary/okikio/Khanacademy",
-                  alt: "A banner for 'Khan Academy'. It has the Khan Academy logo offset left by a small amount, with the text 'Khan Academy' in the center. The text is white and the background is black. The logo is a green hexagon with a black cartoonified leaf.",
-                },
-                description:
-                  "When I first started out programming these are the projects I worked on before I got OSS work. Back then I used to use 'whitelight' as my username, 🤣.",
-                link: "https://www.khanacademy.org/profile/liteo/projects",
-              },
-
-              ["More... " + externalIcon]: {
-                showTitle: true,
-                image: {
-                  width: "350",
-                  height: "400",
-                  blank: true,
-                },
-                description: "Check out more Projects on GitHub.",
-                link: "https://github.com/okikio",
+                  "AI-powered native Android application that scans food labels and flags ingredients violating user-defined dietary restrictions using the Gemini API.",
+                link: "https://www.safebites.fit/",
               },
             };
 
@@ -258,7 +171,7 @@ let sizes = `(max-width: 300px) 270px, (max-width: 350px) 320px, (max-width: 450
                     {
                       loading: "lazy",
                       fetchpriority: "low",
-                      width: "350",
+                      width: "400",
                       height: "400",
                       sizes,
                     },
@@ -286,37 +199,19 @@ let sizes = `(max-width: 300px) 270px, (max-width: 350px) 320px, (max-width: 450
     </div>
     <div class="container px-3 sm:px-5 max-w-[85ch]">
       <div
-        class="flex flex-col gap-2 xsm:grid lt-sm:grid-cols-2 sm:grid-cols-4 sm:gap-6 justify-center overflow-x-auto"
+        class="flex flex-col gap-2 xsm:grid sm:grid-cols-3 sm:gap-6 justify-center overflow-x-auto"
       >
         {
           () => {
             let links = {
-              LinkedIn: "https://www.linkedin.com/in/okikio",
-              Twitter: "https://twitter.com/okikio_dev",
-              Reddit: "https://www.reddit.com/user/okikio_dev",
-              GitHub: "https://github.com/okikio",
-              Blog: "https://blog.okikio.dev",
-              "Dev.to": "https://dev.to/okikio",
-              Hackernoon: "https://hackernoon.com/u/okikio",
-              "CSS-Tricks": "https://css-tricks.com/author/okikiojo/",
-              Codepen: "https://codepen.io/okikio",
-              "Daily.dev": "https://app.daily.dev/okikio",
-              "Product Hunt": "https://www.producthunt.com/@okiki_ojo",
-              Stackoverflow:
-                "https://stackoverflow.com/users/12140185/okikio?tab=profile",
-              "Buy me a coffee": "https://www.buymeacoffee.com/okikio",
-              "Bluesky (@okikio.dev)": "https://bsky.app/profile/okikio.dev",
-              "Mastodon (@okikio)": "https://mastodon.social/@okikio",
-              Email: "mailto:hey@okikio.dev",
-              "@inthistweet_dev": "https://twitter.com/inthistweet_dev",
-              "@jsbundle": "https://twitter.com/jsbundle",
+              LinkedIn: "https://www.linkedin.com/in/bghailu",
+              GitHub: "https://github.com/bghailu",
+              Email: "mailto:binighailu@gmail.com",
             };
 
             return Object.keys(links).map((name) => {
               let href = links[name as keyof typeof links];
-              let rel = /Bluesky|Mastodon/.test(name)
-                ? { rel: "me noopener" }
-                : {};
+              let rel = {};
               return (
                 <Anchor
                   class={`px-4 py-2 hover:text-primary hover:bg-primary/30 focus:bg-primary/20 umami--click--${slugger(name, { lower: false })}-contact`}

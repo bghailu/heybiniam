@@ -5,7 +5,7 @@ Use it with `CLAUDE.md`, `.github/copilot-instructions.md`, and the scoped files
 
 ## Repository snapshot
 
-- Project type: Astro 5 portfolio website for Okiki Ojo
+- Project type: Astro 5 portfolio website for Biniam Hailu
 - Styling: Tailwind CSS
 - Runtime model: ESM, TypeScript-flavored `.astro` components and config
 - Main homepage entry: `src/pages/index.astro`

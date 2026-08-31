@@ -4,22 +4,23 @@ import { SEO } from "astro-seo";
 import "@/styles/global.css";
 
 const defaultKeywords = [
-  "Okiki Ojo",
-  "web developer",
-  "design",
-  "software engineer",
-  "open source",
-  "Astro maintainer",
+  "Biniam Hailu",
+  "applied AI engineer",
+  "AI engineer",
+  "computer science",
+  "LLM applications",
+  "Pacific Lutheran University",
+  "mathematician",
 ];
 const {
-  title = "Okiki Ojo — Web Developer & Designer (okikio)",
-  description = "Software engineer, web developer, and open source maintainer based in Ontario, Canada.",
+  title = "biniam",
+  description = "Portfolio of Biniam Hailu, a computer science and math student at Pacific Lutheran University building applied AI systems — agentic workflows, RAG pipelines, and fine-tuned LLMs.",
   keywords = defaultKeywords,
   img = {
-    url: `/favicon/banner-image.png`,
-    alt: "The banner image for Okiki Ojo's portfolio website, it has a yellow background and with a black 'K' in the center, representing his logo.",
-    width: 1200,
-    height: 630,
+    url: `/favicon/android-chrome-512x512.png`,
+    alt: "Biniam Hailu's site icon.",
+    width: 512,
+    height: 512,
   },
 } = Astro.props as Props;
 
@@ -62,29 +63,22 @@ const extendMeta = {
 ---
 
 <link rel="icon" href="/favicon.ico" sizes="any" />
-<link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
 <link rel="manifest" href="/manifest.json" />
 <Font cssVariable="--font-family-lexend" preload />
 <Font cssVariable="--font-family-manrope" preload />
 
-<link href="https://github.com/okikio" rel="me" />
-<link rel="webmention" href="https://webmention.io/okikio.dev/webmention" />
-<link rel="pingback" href="https://webmention.io/okikio.dev/xmlrpc" />
-<link
-  rel="pingback"
-  href="https://webmention.io/webmention?forward=https://okikio.dev/endpoint"
-/>
+<link href="https://github.com/bghailu" rel="me" />
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width" />
 <meta name="viewport" content="width=device-width" />
 <meta name="color-scheme" content="dark" />
 <meta name="robots" content="index, follow, noimageindex" />
-<meta name="theme-color" content="#ffff00" />
+<meta name="theme-color" content="#000000" />
 
 <SEO
-  title={/Okiki/i.test(title) ? title : title + " — Okiki Ojo"}
+  title={/Biniam/i.test(title) ? title : title + " — Biniam Hailu"}
   {description}
   openGraph={{
     image: { ...imageDetails },
@@ -94,19 +88,17 @@ const extendMeta = {
       image: imageDetails.url,
     },
     article: {
-      authors: ["Okiki Ojo"],
+      authors: ["Biniam Hailu"],
       tags: keywordTags,
     },
     optional: {
       description,
-      siteName: "Okiki Ojo",
+      siteName: "Biniam Hailu",
       locale: "en_US",
     },
   }}
   twitter={{
     card: "summary_large_image",
-    site: "@okikio_dev",
-    creator: "@okikio_dev",
   }}
   extend={extendMeta}
 />
@@ -116,51 +108,35 @@ const extendMeta = {
   set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Okiki Ojo",
-    alternateName: "okikio",
-    url: "https://okikio.dev/",
-    image: "https://okikio.dev/favicon/banner-image.png",
+    name: "Biniam Hailu",
+    url: "https://heybiniam.com/",
+    image: "https://heybiniam.com/favicon/android-chrome-512x512.png",
     description:
-      "Portfolio for Okiki Ojo. It contains some amazing projects, and a little about him.",
+      "Portfolio for Biniam Hailu. It contains some of his projects, and a little about him.",
     sameAs: [
-      "https://okikio.dev",
-      "https://blog.okikio.dev/",
-      "https://hashnode.com/@okikio",
-      "https://twitter.com/okikio_dev",
-      "https://www.linkedin.com/in/okikio/",
-      "https://github.com/okikio",
-      "https://codepen.io/okikio",
-      "https://dev.to/okikio",
-      "https://stackoverflow.com/users/12140185/okikio?tab=profile",
-      "https://www.buymeacoffee.com/okikio",
-      "https://app.daily.dev/okikio",
-      "https://css-tricks.com/author/okikiojo/",
-      "https://hackernoon.com/u/okikio",
-      "https://www.producthunt.com/@okiki_ojo",
-      "https://www.reddit.com/user/okikio_dev",
-      "https://bsky.app/profile/okikio.dev",
-      "https://twitter.com/inthistweet_dev",
-      "https://twitter.com/jsbundle",
+      "https://heybiniam.com",
+      "https://www.linkedin.com/in/bghailu",
+      "https://github.com/bghailu",
     ],
-    about: { "@type": "Person", name: "Portfolio of Okiki Ojo" },
-    mainEntity: { "@type": "Article", "@id": "https://okikio.dev/#content" },
+    about: { "@type": "Person", name: "Portfolio of Biniam Hailu" },
+    mainEntity: { "@type": "Article", "@id": "https://heybiniam.com/#content" },
     inLanguage: "en",
-    author: { "@type": "Person", name: "Okiki Ojo" },
+    author: { "@type": "Person", name: "Biniam Hailu" },
     publisher: {
       "@type": "Person",
-      name: "Okiki Ojo",
+      name: "Biniam Hailu",
       logo: {
         "@type": "ImageObject",
-        url: "https://okikio.dev/favicon/android-chrome-512x512.png",
+        url: "https://heybiniam.com/favicon/android-chrome-512x512.png",
       },
     },
     copyrightYear: new Date().getFullYear().toString(),
     copyrightHolder: {
       "@type": "Person",
-      name: "Okiki Ojo",
+      name: "Biniam Hailu",
       logo: {
         "@type": "ImageObject",
-        url: "https://okikio.dev/favicon/android-chrome-512x512.png",
+        url: "https://heybiniam.com/favicon/android-chrome-512x512.png",
       },
     },
   })}

@@ -1,37 +1,25 @@
-[Portfolio](https://okikio.dev) \| [About](#about) \| [Contact](#contact) \| [Blog](https://blog.okikio.dev)
+[Portfolio](https://heybiniam.com) \| [About](#about) \| [Contact](#contact)
 
-# Hello, I’m **Okiki.**
-
-<div style="display:flex">
-
-<!-- ![A black and white profile photo of Okiki Ojo, smiling, looking straight forward, behind a brick wall backdrop. He is wearing glasses, a black shirt and jacket, and wireless headphones which are hanging on his neck.](https://okikio.dev/images/upload/f_auto,q_auto:best,c_limit/w_400,dpr_auto/okikio/okiki-ojo.jpg) -->
-
- </div>
+# Hello, I’m **Biniam.**
 
 ## About.
 
-Hey, I am Okiki Ojo (pronounced O-key-key O-jo). I'm a software engineer, web developer, open source contributor, and maintainer on **[@withastro](https://github.com/withastro)**. I previously interned as a Software Engineer at **[@vercel](https://github.com/vercel)**, and I am always eager to take on new challenges.
+Hey, I am Biniam Hailu, a computer science and math student at Pacific Lutheran University applying myself as an AI engineer, building agentic systems, RAG pipelines, and fine-tuned LLMs on top of a background in scalable backend and cloud systems. I enjoy learning about new technologies and love solving complex problems. When I'm not coding, you can find me watching movies, playing tennis, or hanging out with friends.
 
 ### Skills
 
-I have experience in Astro, Next.js, React, Solid.js, Svelte, Javascript/Typescript, Deno/Node.js, C#/C/C++, Kotlin/Java, CSS/SASS, Tailwind CSS, HTML, Pug, Fastify, Pjax, and more… All in all, I prefer to learn skills as I need them, so I can focus on finding solutions to problems.
+**AI & AI-Native Tooling:** RAG, Agentic & Multi-Agent Systems (LangGraph, Pydantic-AI), LLM Fine-Tuning (QLoRA, Unsloth), vLLM, FAISS, pgvector, Tool/Function Calling, Hallucination Guardrails, Claude Code. **Languages & Frameworks:** Python, TypeScript, Go, Java, Next.js, React, Node.js, FastAPI, Flask, Gin, Pandas. **Cloud, Infrastructure & Data:** AWS (EC2, Lambda, DynamoDB, S3, CDK), Azure (App Service, Entra ID), Firebase, Docker, PostgreSQL, MongoDB, Redis, REST APIs, CI/CD, Git, GitHub.
 
 ## Featured Projects.
 
-| [bundlejs](https://bundlejs.com)                         | [inthistweet](https://inthistweet.app/)                               | [reindeere](https://reindeere.ca)                     | [jabodent](https://jabodent.com)                   | [josephojo](https://josephojo.com)                      |
-| :------------------------------------------------------- | :-------------------------------------------------------------------- | :---------------------------------------------------- | :------------------------------------------------- | :------------------------------------------------------ |
-| [transferables](https://github.com/okikio/transferables) | [spring-easing](https://spring-easing.okikio.dev)                     | [@okikio/animate](https://native.okikio.dev/animate)  | [@okikio/native](https://native.okikio.dev/native) | [@okikio/sharedworker](https://sharedworker.okikio.dev) |
-| [Codepen Projects](https://codepen.com/okikio)           | [Legacy Projects](https://www.khanacademy.org/profile/liteo/projects) | [More...](https://github.com/okikio?tab=repositories) |                                                    |                                                         |
+| [RentLink](https://www.rentlink.space/) | [Safe Bites](https://www.safebites.fit/) |
+| :--------------------------------------- | :---------------------------------------- |
 
 ## Contact.
 
-| [LinkedIn](https://www.linkedin.com/in/okikio)         | [Twitter](https://twitter.com/okikio_dev) | [Reddit](https://www.reddit.com/user/okikio_dev)        | [Blog](https://blog.okikio.dev)                                              |
-| :----------------------------------------------------- | :---------------------------------------- | :------------------------------------------------------ | :--------------------------------------------------------------------------- |
-| [GitHub](https://github.com/okikio)                    | [Dev.to](https://dev.to/okikio)           | [Hackernoon](https://hackernoon.com/u/okikio)           | [CSS-Tricks](https://css-tricks.com/author/okikiojo/)                        |
-| [Codepen](https://codepen.io/okikio)                   | [Daily.dev](https://app.daily.dev/okikio) | [Product Hunt](https://www.producthunt.com/@okiki_ojo)  | [Stackoverflow](https://stackoverflow.com/users/12140185/okikio?tab=profile) |
-| [Buy me a coffee](https://www.buymeacoffee.com/okikio) | [Email](mailto:hey@okikio.dev)            | [@inthistweet_dev](https://twitter.com/inthistweet_dev) | [@jsbundle](https://twitter.com/jsbundle)                                    |
-| <a rel="me" href="https://mastodon.social/@okikio">Mastodon</a>         |                                           |                                                         |
+| [LinkedIn](https://www.linkedin.com/in/bghailu) | [GitHub](https://github.com/bghailu) | [Email](mailto:binighailu@gmail.com) |
+| :------------------------------------------------ | :-------------------------------------- | :-------------------------------------- |
 
 This is licensed under the [GNU Affero General Public License v3.0](./LICENSE).
 
-**© 2026 Okiki Ojo. All rights reserved.**
+**© 2026 Biniam Hailu. All rights reserved.**
